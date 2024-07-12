@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Bootstrap 5 Shopping Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const cartItemsContainer = document.getElementById('cartItems');
+      let totalCost = 0;
+
+      document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+          const name = button.getAttribute('data-name');
+          const price = parseFloat(button.getAttribute('data-price'));
+          const image = button.getAttribute('data-image');
+
+          // Calculate total cost
+          totalCost += price;
+
+          // Create cart item HTML
+          const cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item', 'border-bottom', 'p-2', 'mb-2');
+          cartItem.innerHTML = `
+            <div class="row align-items-center">
+              <div class="col-auto">
+                <img src="${data-image}" class="img-thumbnail" style="width: 80px; height: 80px;" alt="${name}">
+              </div>
+              <div class="col">${name}</div>
+              <div class="col">${price}원</div>
+              <div class="col">
+                <input type="number" class="form-control quantity-input" value="1" min="1">
+              </div>
+              <div class="col">${price}원</div>
+            </div>
+          `;
+
+          cartItemsContainer.appendChild(cartItem);
+
+          // Update total cost display
+          updateTotalCost();
+        });
+      });
+
+      // Function to update total cost display
+      function updateTotalCost() {
+        const totalCostElement = document.getElementById('totalCost');
+        totalCostElement.textContent = `Total Cost: ₩${totalCost}`;
+      }
+    });
+  </script>
+</body>
+</head>
+<body>
+  <div class="container-fluid p-3 bg-black text-white text-center">
+    <h1>제품 리스트</h1>
+  </div>
+
+  <div class="container mt-5">
+    <h2 style="text-align: center;">제품</h2>
+    <hr>
+    <div class="row" id="productList">
+      <!-- Product Cards -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="img/삼겹살.PNG" class="card-img-top" alt="삼겹살">
+          <div class="card-body">
+            <h5 class="card-title">삼겹살</h5>
+            <p class="card-text">Kg당 16425원</p>
+            <button class="btn btn-primary add-to-cart" data-name="삼겹살" data-price="16425원">카트 담기</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="img/목살.PNG" class="card-img-top" alt="목살">
+          <div class="card-body">
+            <h5 class="card-title">목살</h5>
+            <p class="card-text">Kg당 14,550원</p>
+            <button class="btn btn-primary add-to-cart" data-name="Product 2" data-price="14,550원">카트 담기</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">₩30,000</p>
+            <button class="btn btn-primary add-to-cart" data-name="Product 3" data-price="30000">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Button -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cartModal">
+      쇼핑 카트
+    </button>
+  </div>
+
+  <!-- Shopping Cart Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="cartItems">
+            <!-- Cart items will be listed here -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">구매</button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">취소</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

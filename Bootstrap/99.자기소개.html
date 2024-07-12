@@ -8,9 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/fdb840a8cc.js" crossorigin="anonymous"></script>
   <style>
-    .profile-img { width: 10%; height: 10%; object-fit: cover; }
-    th { text-align: center; width: 14.28%; }
-    td { height: 100px; }
+    .profile-img { width: 350px; height 350px; object-fit: contain; }
+    th { text-align: center; width: 10%; }
+    td { height: 20px; }
+    span { text-align: center;}
   </style>
 </head>
 <body>
@@ -21,54 +22,74 @@
           <img src="img/img_1.png" alt="Logo" style="height: 36px;">
         </a>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="#birthplace"><i class="fa-solid fa-cake-candles"></i>&nbsp;태어난 곳</a>
+          <a class="nav-link" href="#태어난곳"><i class="fa-solid fa-cake-candles"></i>&nbsp;태어난 곳</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="#wishlist"><i class="fa-solid fa-eye"></i>&nbsp;가보고 싶은 곳</a>
+          <a class="nav-link" href="#가보고싶은곳"><i class="fa-solid fa-eye"></i>&nbsp;가보고 싶은 곳</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="#favorite-food"><i class="fa-solid fa-bowl-food"></i>&nbsp;좋아하는 음식</a>
+          <a class="nav-link" href="#좋아하는음식"><i class="fa-solid fa-bowl-food"></i>&nbsp;좋아하는 음식</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="#favorite-place"><i class="fa-regular fa-face-smile"></i>&nbsp;좋아하는 곳</a>
+          <a class="nav-link" href="#좋아하는곳"><i class="fa-regular fa-face-smile"></i>&nbsp;좋아하는 곳</a>
         </li>
       </ul>
-      <span class="navbar-text me-3">방문하신것을 환영합니다.</span>
+      <span class="navbar-text me-3">방문하신 것을 환영합니다.</span>
     </div>
   </nav>
-
-  <div class="container" style="margin-top: 90px; margin-left: 20px;">
+  <div class="container" style="margin-top: 100px;">
     <div class="row">
       <div class="col-3">
-        <img src="img/flower.jfif" alt="profile" class="rounded-circle">
-        <div class="mt-2">
-          <span style="text-align: center;">안녕하세요<br>김태환 입니다.</span><br>
+        <img src="img/flower.jfif" alt="profile" class="rounded-circle img-thumbnail" style="width: 250px; height: 250px ">
+        <div class="mt-2 profile-info">
+          <span>김태환</span><br>
           <a href="#"><span class="badge bg-secondary">수정</span></a>
         </div>
-        <div class="mt-5">
-          <i class="fa-solid fa-envelope"></i> haja019@naver.com <br>
+        <div class="mt-5 profile-info">
+          <i class="fa-solid fa-envelope"></i>&nbsp;haja5452@gmail.com<br>
           <i class="fa-brands fa-github"></i>
-          <a href="https://github.com/TaeHwan-Kim6408" target="_blank"> TaeHwna Kim </a><br>
+          <a href="https://github.com/TaeHwan-Kim6408" target="_blank">TaeHwan-Kim6408</a><br>
+          <a href="#"><i class="fa-solid fa-phone"></i>&nbsp;010-7194-6408</a>
         </div>
       </div>
+        <div class="col-9" >
+          <section id="태어난곳" class="text-center">
+            <h1 style="font-size: 30px;">태어난 곳</h1>
+            <p style="font-size: 20px; color: red;">"아산시"</p>
+            <p>충청남도 아산시에 태어나 부모님의 일때문에 수원으로 이사와 수원에서 자랐으며, <br>
+              집안사정으로 인하여 현재는 용인에서 살고 있습니다</p>
+            <img src="img/아산.png" alt="Profile Picture" class="profile-img">
+            <br>
+            <p><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%82%B0%EC%8B%9C" target="_blank" style="font-size: 20px;">아산시 정보 이동링크</a></p>
+          </section>
+            
+          <section id="가보고싶은곳" class="text-center">
+            <h1 style="font-size: 30px;">가보고 싶은 곳</h1>
+            <p style="font-size: 20px; color: red; height: 30px;">"일본"</p>
+            <img src="img/일본.jfif" alt="Profile Picture" class="profile-img" style="font-size: 15px;">
+            <br>
+            <p>일본에서 제작되는 드라마와 애니메이션에 흥미가 있어,<br> 일본에 방문하여 드라마,애니메이션 관련으로 돌아다녀보고 싶습니다.</p>
+            <br>
+          </section>
+
+          <section id="좋아하는음식" class="text-center">
+            <h1 style="font-size: 30px;">좋아하는 음식</h1>
+            <p style="font-size: 20px; color: red;">"삼겹살"</p>
+            <img src="img/삼겹살.PNG" alt="Profile Picture" class="profile-img">
+            <p>고기를 굉장이 좋아하며, 좋아하는 음식들이 돼지로 하는 음식이 많아 정말 좋아합니다</p>
+          </section>
+
+          <section id="좋아하는곳" class="text-center">
+            <h1 style="font-size: 30px;">"좋아하는 곳"</h1>
+            <p style="font-size: 20px; color: red;">"제주도"</p>
+            <img src="img/제주도.jfif" alt="Profile Picture" class="profile-img">
+            <p>섬과 바다가 아름다워 휴식을 취하기 좋은곳이라 좋아합니다 !!</p>
+          </section>
+        </div>
       </div>
     </div>
   </div>
-  <hr>
-
-  <div class="row">
-    <div class="col">
-      <section id="home">
-        <h1 style="font-size: 50px;">태어난곳</h1>
-        <p style="font-size: 30px; color: red;">충청남도 아산시</p>
-        <p>충청남도 아산시에 태어났으며, 현재는 용인에서 살고 있습니다</p>
-        <img src="아산.png" alt="Profile Picture" class="profile-img">
-        <br>
-        <p><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%82%B0%EC%8B%9C" target="_blank" style="font-size: 20px;">아산시 정보 이동링크</a></p>
-      </section>
-    </div>
-  </div>
-
+  
   <nav class="navbar navbar-expand-sm bg-light fixed-bottom">
     <div class="container-fluid justify-content-center">
       <span class="navbar-text">

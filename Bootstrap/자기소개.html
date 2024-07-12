@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 NavBar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/fdb840a8cc.js" crossorigin="anonymous"></script>
+  <style>
+    .profile-img { width: 300px; height: 300px; object-fit: cover; }
+    .fixed-bottom { position: fixed; bottom: 0; width: 100%; z-index: 1030; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <a class="navbar-brand mx-2" href="#"><img src="img/ck.png" alt="Logo" style="height: 36px;"></a>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#태어난곳"><i class="fa-solid fa-cake-candles"></i>&nbsp;태어난 곳</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#가보고싶은곳"><i class="fa-solid fa-eye"></i>&nbsp;가보고 싶은 곳</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#좋아하는음식"><i class="fa-solid fa-bowl-food"></i>&nbsp;좋아하는 음식</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#좋아하는곳"><i class="fa-regular fa-face-smile"></i>&nbsp;좋아하는 곳</a>
+        </li>
+      </ul>
+      <span class="navbar-text me-3">홈페이지 방문을 환영합니다.</span>
+    </div>
+  </nav>
+  <div class="container" style="margin-top: 50px; text-align: center;">
+    <div class="row">
+      <div class="col-3">
+        <img src="https://i0.wp.com/health-nam.co.kr/wp-content/uploads/2024/03/20240321_201950_11zon-optimized.webp?w=563&ssl=1" alt="profile" class="rounded-circle img-thumbnail" style="width: 350px; height: 350px ">
+        <div class="mt-2 profile-info">
+          <span>김태환</span><br>
+          <a href="#"><span class="badge bg-secondary">수정</span></a>
+        </div>
+        <div class="mt-5 profile-info">
+          <i class="fa-solid fa-envelope"></i>&nbsp;haja5452@gmail.com<br>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/TaeHwan-Kim6408" target="_blank">TaeHwan-Kim6408</a><br>
+          <a href="#"><i class="fa-solid fa-phone"></i>&nbsp;010-7194-6408</a>
+        </div>
+      </div>
+      <div class="col-9">
+        <section id="태어난곳" class="text-center mt-4">
+          <h3 style="font-size: 30px;">태어난 곳</h3>
+          <p style="font-size: 20px; color: red;">"아산시"</p>
+          <img src="img/아산시.png" alt="Profile Picture" class="img" style="width: 30%; height: auto; object-fit: fill;">
+          <p>충청남도 아산시에 태어나 부모님의 일때문에 수원으로 이사와 수원에서 자랐으며,<br>
+            집안사정으로 인하여 현재는 용인에서 살고 있습니다</p>
+          <p><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%82%B0%EC%8B%9C" target="_blank" style="font-size: 20px;">아산시 정보 이동링크</a></p>
+        </section>
+        <section id="가보고싶은곳" class="text-center mt-4">
+          <h1 style="font-size: 30px;">가보고 싶은 곳</h1>
+          <p style="font-size: 20px; color: red; height: 30px;">"일본"</p>
+          <img src="img/일본사진.jpg" alt="Profile Picture" class="img" style="width: 40%; height: auto; object-fit: fill;">
+          <p>일본에서 제작되는 드라마와 애니메이션에 흥미가 있어,<br> 일본에 방문하여 드라마,애니메이션 관련으로 돌아다녀보고 싶습니다.</p>
+        </section>
+        <section id="좋아하는음식" class="text-center mt-4">
+          <h1 style="font-size: 30px;">좋아하는 음식</h1>
+          <p style="font-size: 20px; color: red;">"삼겹살"</p>
+          <img src="img/삼겹살.jpg" alt="Profile Picture" class="img" style="width: 40%; height: auto; object-fit: fill;">
+          <p>고기를 굉장이 좋아하며, 좋아하는 음식들이 돼지로 하는 음식이 많아 정말 좋아합니다</p>
+        </section>
+        <section id="좋아하는곳" class="text-center mt-4">
+          <h1 style="font-size: 30px;">"좋아하는 곳"</h1>
+          <p style="font-size: 20px; color: red;">"제주도"</p>
+          <img src="img/제주도.jpg" alt="Profile Picture" class="img" style="width: 40%; height: auto; object-fit: fill;">
+          <p>섬과 바다가 아름다워 휴식을 취하기 좋은곳이라 좋아합니다 !!</p>
+        </section>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg- fixed-bottom">
+    <div class="container-fluid justify-content-center">
+      <span class="navbar-text">
+        Copyright &copy; 2021-2024 CK World Corp. All rights reserved.
+      </span>
+    </div>
+  </nav>
+</body>
+</html>
