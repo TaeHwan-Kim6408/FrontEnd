@@ -1,27 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>자기소개</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmZfDQR3F58gUiyM90gjXQUsp5EFD2pSE&callback=initMap" async
+        defer></script>
+    <script>
+        function initMap() {
+            const bornPlace = { lat: 36.7928, lng: 127.0019 }; // 충청남도 아산시의 좌표
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: bornPlace
+            });
+            const marker = new google.maps.Marker({
+                position: bornPlace,
+                map: map
+            });
+        }
+    </script>
+    <style>
+        body {
+            padding-top: 56px;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+    </style>
 </head>
+
 <body>
-    <aside class="sidebar">
-        <div class="profile">
-            <img src="flower.jfif" alt="Profile Picture" class="profile-picture">
-            <p class="status">오늘의 상태: 행복</p>
-            <p class="email">이메일: haja019@naver.com.com</p>
-            <p class="github">깃허브: <a href="https://github.com/TaeHwan-Kim6408">https://github.com/TaeHwan-Kim6408</a></p>
-            <p class="location">지역: 수원, 대한민국</p>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">자기소개</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#born">태어난 곳</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#places">가봤던/가보고 싶은 곳</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">좋아하는 음식</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#wants">좋아하는 것</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Born Section -->
+        <section id="born" class="section bg-light">
+            <div class="container text-center">
+                <h1 style="font-size: 50px;">태어난 곳</h1>
+                <p style="font-size: 30px; color: red;">충청남도 아산시</p>
+                <p>충청남도 아산시에 태어났으며, 현재는 용인에서 살고 있습니다</p>
+                <img src="아산시.png" alt="Profile Picture" class="profile-img">
+                <br>
+                <p><a href="https://ko.wikipedia.org/wiki/%EC%95%84%EC%82%B0%EC%8B%9C" target="_blank"
+                        style="font-size: 20px;">아산시 정보 이동링크</a></p>
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- Places Section -->
+        <section id="places" class="section">
+            <div class="container text-center">
+                <h1 style="font-size: 50px;">가봤던/가보고 싶은 곳</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>가봤던 곳</h3>
+                        <ul>
+                            <li>중국</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>가보고 싶은 곳</h3>
+                        <ul>
+                            <li>일본</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h2 style="font-size: 30px; color: red;">일본</h2>
+                        <img src="일본사진.jpg" alt="Profile Picture" class="profile-img">
+                        <p>장기여행으로 오랫동안 머무르며 여러가지를 해보고 싶습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="section bg-light">
+            <div class="container text-center">
+                <h1 style="font-size: 50px;">좋아하는 음식</h1>
+                <p style="font-size: 30px; color: red;">삼겹살</p>
+                <img src="삼겹살.jfif" alt="Profile Picture" class="profile-img">
+                <p>저는 육지에 서식하는 육고기는 다 좋아합니다 !!</p>
+            </div>
+        </section>
+
+        <!-- Wants Section -->
+        <section id="wants" class="section">
+            <div class="container text-center">
+                <h1 style="font-size: 50px;">좋아하는 것</h1>
+                <p style="font-size: 30px; color: red;">자동차 드라이브</p>
+                <img src="드라이브.jfif" alt="Profile Picture" class="profile-img">
+                <p>자동차 드라이브를 하다보면 잡생각이 없어지며, 눈앞에 있는것을 하나하나 처리 하기 바쁘기때문에 좋아합니다</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>© 2024 나의 웹페이지</small>
         </div>
-    </aside>
-
-    <div class="content">
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
