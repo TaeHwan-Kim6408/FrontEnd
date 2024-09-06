@@ -1,0 +1,10 @@
+insert into member values ('a01','민즌','수원','010-2426-1576','gmldnd93@gmail.com','247012','safvwe');
+insert into member values ('b02','서연','서울','010-3456-7890','sarahon6789@naver.com','123456','ZenMastnd');
+insert into member values ('c03','지후','인천','010-4567-8901','jackson5432@nate.com','789452','MysticVoyager');
+insert into member values ('d04','하늘','부산','010-5678-9012','james9876@gmail.com','996655','QuantumQuirk');
+insert into member values ('e05','유진','청주','010-6789-0123','charlie432@naver.com','112233','PixelPioneer');
+insert into member values ('f06','태민','안산','010-2426-1576','builder78@naver.com','45678','NebulaNinja');
+insert into member values ('g07','나리','경기','010-7890-1234','land3456@gmail.com','448899','LunaDreamer');
+insert into member values ('h08','준호','제주도','010-8901-2345','rand9012@nate.com','777711','EchoKnight');
+insert into member values ('i09','다빈','충주','010-9012-3456','jane5678@gmail.com','321654','StarGazerX');
+insert into member values ('j10','소희','청주','010-0123-4567','toks013@naver.com','789502','Celcho');

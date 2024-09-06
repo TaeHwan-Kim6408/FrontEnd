@@ -1,0 +1,22 @@
+INSERT INTO Member (user_id, user_name, user_addr, user_tel, user_email, user_pass, user_nick)
+VALUES
+('user001', '김철수', '서울특별시 강남구 역삼동', '010-1234-5678', 'kimchulsoo@example.com', 'pass1234', '철수'),
+('user002', '이영희', '부산광역시 해운대구', '010-2345-6789', 'leeyounghee@example.com', 'password1', '영희'),
+('user003', '박민수', '대구광역시 중구', '010-3456-7890', 'parkminsoo@example.com', 'mypassword', '민수'),
+('user004', '최지은', '인천광역시 연수구', '010-4567-8901', 'choijieun@example.com', 'securepass', '지은'),
+('user005', '홍길동', '광주광역시 북구', '010-5678-9012', 'honggildong@example.com', '1234abcd', '길동'),
+('user006', '김서연', '울산광역시 남구', '010-6789-0123', 'kimseoyeon@example.com', 'secreT123', '서연'),
+('user007', '이준호', '경기도 수원시', '010-7890-1234', 'leejunho@example.com', 'passw0rd', '준호'),
+('user008', '정은지', '경상북도 포항시', '010-8901-2345', 'jeongeunji@example.com', 'password12', '은지'),
+('user009', '오상미', '충청남도 천안시', '010-9012-3456', 'osangmi@example.com', 'abc12345', '상미'),
+('user010', '한승우', '전라북도 전주시', '010-0123-4567', 'hansungwoo@example.com', '1q2w3e4r', '승우'),
+('user011', '이수진', '서울특별시 송파구', '010-2345-6789', 'leesoojin@example.com', 'password99', '수진'),
+('user012', '장민호', '서울특별시 관악구', '010-3456-7890', 'jangminho@example.com', 'minho2024', '민호'),
+('user013', '김하늘', '부산광역시 부산진구', '010-4567-8901', 'kimhaneul@example.com', 'haneul123', '하늘'),
+('user014', '정다혜', '대구광역시 서구', '010-5678-9012', 'jeongdahee@example.com', 'dahye456', '다혜'),
+('user015', '이재호', '인천광역시 남동구', '010-6789-0123', 'leejaeho@example.com', 'jaeho789', '재호'),
+('user016', '박서연', '광주광역시 남구', '010-7890-1234', 'parkseoyeon@example.com', 'seoyeon000', '서연'),
+('user017', '오현수', '울산광역시 중구', '010-8901-2345', 'ohhyunsu@example.com', 'hyunsu111', '현수'),
+('user018', '이영진', '경기도 용인시', '010-9012-3456', 'leeyoungjin@example.com', 'youngjin22', '영진'),
+('user019', '정민규', '경상남도 진주시', '010-0123-4567', 'jeongmingyu@example.com', 'mingyu33', '민규'),
+('user020', '김하영', '충청북도 청주시', '010-1234-5678', 'kimhayoung@example.com', 'hayoung44', '하영');
